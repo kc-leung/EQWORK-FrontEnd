@@ -1,0 +1,73 @@
+.eventsContainer {  
+  background-color: whitesmoke;
+
+  .titleContainer {
+    height: 25vh;
+    width: 100%;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../../assets/home-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+  
+  .contentContainer {
+    padding: 0 5rem;
+
+    .chartOptions {
+      height: 8rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .item {
+        padding: 0.5rem 4rem;
+        background-color: #9bf1ff;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+
+    .listContainer {
+      margin-bottom: 2rem;
+      min-height: 20rem;
+      color: white;
+      background-color: black;
+
+      .hourlyDataContainer, .itemTitle {      
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        height: 4rem;
+        align-items: center;
+        border-width: 1px;
+        border-style: solid;
+        border-color: white;
+        font-size: 1rem;
+
+        .date {
+          padding-left: 2rem;
+        }
+      }
+
+      .itemTitle {
+        font-size: 1.2em;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+      }
+
+      .searching {
+        background-color: darkmagenta;
+      }
+    }
+  }
+}

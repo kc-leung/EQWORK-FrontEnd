@@ -1,0 +1,56 @@
+.mapContainer {
+  background-color: whitesmoke;
+
+  .titleContainer {
+    height: 25vh;
+    width: 100%;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../../assets/home-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+
+  .contentContainer {
+    padding: 0 5rem;
+
+    .listContainer {
+      margin-bottom: 2rem;
+      min-height: 20rem;
+      color: white;
+      background-color: black;
+
+      .mapDataContainer, .itemTitle {      
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        height: 4rem;
+        align-items: center;
+        border-width: 1px;
+        border-style: solid;
+        border-color: white;
+        font-size: 1rem;
+
+        .name {
+          padding-left: 2rem;
+        }
+      }
+
+      .itemTitle {
+        font-size: 1.2em;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+      }
+
+      .searching {
+        background-color: darkmagenta;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.navbarContainer {
+  position: absolute;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  line-height: 1.65em;
+  letter-spacing: 0.2rem;
+  z-index: 1;
+
+  .title {
+    margin-left: 5rem;
+    font-size: 1.1rem;
+    color: white;
+  }
+
+  .menuContainer {
+    width: 45%;
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 0.95rem;
+    border-radius: 0.35em;
+
+    .navbarItem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: opacity 0.3s ease-out;
+    }
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color: #9bf1ff;
+  }
+}

@@ -1,0 +1,17 @@
+.searchBarContainer {
+  position: relative;
+  width: 100%;
+
+  .searchBarStyle {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 1rem 10px;
+    font-size: 1rem;
+    color: black;
+  }
+}
+
